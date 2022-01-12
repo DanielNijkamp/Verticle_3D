@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class PlayerTest : MonoBehaviour
 {
-    public float playerHP;
+    public float life, playerHP, star, coins;
     private int player = 6;
-
-    public int coins;
+    private int lifes = 5;
 
     public void Start()
     {
         playerHP = player;
+        life = lifes;
     }
 }
