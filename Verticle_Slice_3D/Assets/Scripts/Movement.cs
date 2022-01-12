@@ -24,6 +24,8 @@ public class Movement : MonoBehaviour
     float turnSpeedHigh = 20;
 
     public float jumpheight;
+    public int maxjumpcount = 3;
+    public int jumpcount;
 
     public float grav = 10f;
     public bool grounded = false;
@@ -112,20 +114,40 @@ public class Movement : MonoBehaviour
         {
             if (Input.GetButtonDown("Jump"))
             {
+                jumpcount++;
                 StartCoroutine(jumpCooldown());
+                Debug.Log(jumpcount);
             }
 
         }
         if (isjumping)
         {
-            velocity.y = jumpheight;
-
+            if (jumpcount == 1)
+            {
+                velocity.y = jumpheight;
+            }
+            else if (jumpcount == 2)
+            {
+                velocity.y = jumpheight + 2;
+            }
+            else if (jumpcount == maxjumpcount)
+            {
+                velocity.y = jumpheight + 5;
+                jumpcount = 0;
+            }
         }
     }
     IEnumerator jumpCooldown()
     {
         isjumping = true;
-        yield return new WaitForSecondsRealtime(0.1f);
+        if (jumpcount < maxjumpcount)
+        {
+            yield return new WaitForSecondsRealtime(0.1f);
+        }
+        else if (jumpcount == maxjumpcount)
+        {
+            yield return new WaitForSeconds(0.1f);
+        }
         isjumping = false;
     }
 }
