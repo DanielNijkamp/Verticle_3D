@@ -26,16 +26,19 @@ public class Movement : MonoBehaviour
     public float jumpheight;
     public int maxjumpcount = 3;
     public int jumpcount;
+    float inputTimer;
 
     public float grav = 10f;
     public bool grounded = false;
     public bool isjumping = false;
     private void Start()
     {
+        inputTimer = 0;
         character = GetComponent<CharacterController>();
     }
     void Update()
     {
+        inputTimer += Time.deltaTime;
         DoInput();
         CalculateCamera();
         CalculateGround();
@@ -44,6 +47,11 @@ public class Movement : MonoBehaviour
         DoJump();
 
         character.Move(velocity * Time.deltaTime);
+
+        if (inputTimer >= 2)
+        {
+            jumpcount = 0;
+        }
     }
 
     void DoInput()
@@ -114,6 +122,7 @@ public class Movement : MonoBehaviour
         {
             if (Input.GetButtonDown("Jump"))
             {
+                inputTimer = 0;
                 jumpcount++;
                 StartCoroutine(jumpCooldown());
                 Debug.Log(jumpcount);
