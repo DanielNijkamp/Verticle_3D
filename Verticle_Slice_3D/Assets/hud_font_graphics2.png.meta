@@ -1,0 +1,1116 @@
+fileFormatVersion: 2
+guid: 9f3f264b5da51104fa9325a9e8e99efb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6601249778672215001
+    second: hud_font_graphics2_0
+  - first:
+      213: 1778186757799066136
+    second: hud_font_graphics2_1
+  - first:
+      213: -4918174017850568425
+    second: hud_font_graphics2_2
+  - first:
+      213: 5493689314865175454
+    second: hud_font_graphics2_3
+  - first:
+      213: 8595120502895653433
+    second: hud_font_graphics2_4
+  - first:
+      213: 4110658971259902375
+    second: hud_font_graphics2_5
+  - first:
+      213: -9128007629241939833
+    second: hud_font_graphics2_6
+  - first:
+      213: 5051888328162076557
+    second: hud_font_graphics2_7
+  - first:
+      213: -2251326421311231803
+    second: hud_font_graphics2_8
+  - first:
+      213: 3066599869402819441
+    second: hud_font_graphics2_9
+  - first:
+      213: 9221533219134081243
+    second: hud_font_graphics2_10
+  - first:
+      213: 125298325536162217
+    second: hud_font_graphics2_11
+  - first:
+      213: -4519611529793971843
+    second: hud_font_graphics2_12
+  - first:
+      213: 4442848525340588707
+    second: hud_font_graphics2_13
+  - first:
+      213: -5559680962861376858
+    second: hud_font_graphics2_14
+  - first:
+      213: 1798902078649950207
+    second: hud_font_graphics2_15
+  - first:
+      213: -8850478400185135093
+    second: hud_font_graphics2_16
+  - first:
+      213: 8401913167851893953
+    second: hud_font_graphics2_17
+  - first:
+      213: -6891048844725444910
+    second: hud_font_graphics2_18
+  - first:
+      213: -6671805011402715380
+    second: hud_font_graphics2_19
+  - first:
+      213: -3489510463898172555
+    second: hud_font_graphics2_20
+  - first:
+      213: 1708170679970901282
+    second: hud_font_graphics2_21
+  - first:
+      213: -8795213755935291532
+    second: hud_font_graphics2_22
+  - first:
+      213: -3064667017752761457
+    second: hud_font_graphics2_23
+  - first:
+      213: 2605936048615968277
+    second: hud_font_graphics2_24
+  - first:
+      213: -346910008975480109
+    second: hud_font_graphics2_25
+  - first:
+      213: -6872949983509070026
+    second: hud_font_graphics2_26
+  - first:
+      213: 5014365864690412595
+    second: hud_font_graphics2_27
+  - first:
+      213: -1420542126084268640
+    second: hud_font_graphics2_28
+  - first:
+      213: 1222138884854048988
+    second: hud_font_graphics2_29
+  - first:
+      213: 7264686783843537137
+    second: hud_font_graphics2_30
+  - first:
+      213: 5528359318274060327
+    second: hud_font_graphics2_31
+  - first:
+      213: -2655735049917315166
+    second: hud_font_graphics2_32
+  - first:
+      213: -1177107705595402910
+    second: hud_font_graphics2_33
+  - first:
+      213: 7417964795924029260
+    second: hud_font_graphics2_34
+  - first:
+      213: 6082588869440876641
+    second: hud_font_graphics2_35
+  - first:
+      213: 1006621718450357182
+    second: hud_font_graphics2_36
+  - first:
+      213: 8925297662610342718
+    second: hud_font_graphics2_37
+  - first:
+      213: -4860291033056028567
+    second: hud_font_graphics2_38
+  - first:
+      213: 8620068010218772927
+    second: hud_font_graphics2_39
+  - first:
+      213: 4138591076491961592
+    second: hud_font_graphics2_40
+  - first:
+      213: 3375802978189530117
+    second: hud_font_graphics2_41
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hud_font_graphics2_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 568
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72cdd9c1d46a364a0800000000000000
+      internalID: -6601249778672215001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 568
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81abaea5f636da810800000000000000
+      internalID: 1778186757799066136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_2
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 568
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7111672d9c22fbbb0800000000000000
+      internalID: -4918174017850568425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_3
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 568
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9bd5e633518d3c40800000000000000
+      internalID: 5493689314865175454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_4
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 568
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932b5c8fe80084770800000000000000
+      internalID: 8595120502895653433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_5
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 568
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a918be1e8efb0930800000000000000
+      internalID: 4110658971259902375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_6
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 568
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7888af76c6dc25180800000000000000
+      internalID: -9128007629241939833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_7
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 568
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87ea0d1ba9eb1640800000000000000
+      internalID: 5051888328162076557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_8
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 568
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8ea404c8ea1c0e0800000000000000
+      internalID: -2251326421311231803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_9
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 568
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ba30c6550ce8a20800000000000000
+      internalID: 3066599869402819441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_10
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 446
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd883f2ea9779ff70800000000000000
+      internalID: 9221533219134081243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_11
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 446
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1c888c9262db100800000000000000
+      internalID: 125298325536162217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_12
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 446
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79ded3724d1741c0800000000000000
+      internalID: -4519611529793971843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_13
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 446
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa3bcfc13b28ad30800000000000000
+      internalID: 4442848525340588707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_14
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 447
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa5528ee9b08d2b0800000000000000
+      internalID: -5559680962861376858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_15
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 446
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff54a7d8ebf6f810800000000000000
+      internalID: 1798902078649950207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_16
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 446
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0092b079c8cc2580800000000000000
+      internalID: -8850478400185135093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_17
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 446
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c43d7bc287999470800000000000000
+      internalID: 8401913167851893953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_18
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 447
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de164806931e50a0800000000000000
+      internalID: -6891048844725444910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_19
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 446
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f8bacd0bcf863a0800000000000000
+      internalID: -6671805011402715380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_20
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 324
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5734757a8b4c29fc0800000000000000
+      internalID: -3489510463898172555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_21
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 324
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d2763ee24a4b710800000000000000
+      internalID: 1708170679970901282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_22
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 324
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47709d120bf11f580800000000000000
+      internalID: -8795213755935291532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_23
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 325
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8badfba59d1875d0800000000000000
+      internalID: -3064667017752761457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_24
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 324
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ec32587052a2420800000000000000
+      internalID: 2605936048615968277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_25
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 324
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da2df15f278f2bf0800000000000000
+      internalID: -346910008975480109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_26
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 324
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f3ae987606e90a0800000000000000
+      internalID: -6872949983509070026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_27
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 324
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c67bacf2b969540800000000000000
+      internalID: 5014365864690412595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_28
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 324
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0add4427678394ce0800000000000000
+      internalID: -1420542126084268640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_29
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 324
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8eae137d8e5f010800000000000000
+      internalID: 1222138884854048988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_30
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 202
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f01873d32a51d460800000000000000
+      internalID: 7264686783843537137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_31
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 207
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720327c628da8bc40800000000000000
+      internalID: 5528359318274060327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_32
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 207
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7cf14fa0fe42bd0800000000000000
+      internalID: -2655735049917315166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_33
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 203
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2656c9147c21aafe0800000000000000
+      internalID: -1177107705595402910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_34
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 202
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f97690ea7e1f660800000000000000
+      internalID: 7417964795924029260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_35
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 202
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160b4cd8952b96450800000000000000
+      internalID: 6082588869440876641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_36
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 202
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb34d6f9e1d38fd00800000000000000
+      internalID: 1006621718450357182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_37
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 203
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3383869fe60ddb70800000000000000
+      internalID: 8925297662610342718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_38
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 202
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 968ddad6e07cc8cb0800000000000000
+      internalID: -4860291033056028567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_39
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 203
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb95cc82f22a0a770800000000000000
+      internalID: 8620068010218772927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_40
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 84
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4a7e828aa3f6930800000000000000
+      internalID: 4138591076491961592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hud_font_graphics2_41
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 86
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50451b24ce249de20800000000000000
+      internalID: 3375802978189530117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 83478babfceeb0f42bfef29ba7e1d1b2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
