@@ -20,12 +20,12 @@ public class Bomb_omb : MonoBehaviour
     //Exploding
     public float timeToExplode = 5;
     bool isTimerOn;
-    public Transform vision;
+    public Transform vision, pickup;
 
 
     //States
-    public float sightRange, attackRange;
-    public bool playerInSightRange, playerInAttackRange;
+    public float sightRange, attackRange, pickUpRange;
+    public bool playerInSightRange, playerInAttackRange, playerInPickUpRange;
 
     private void Awake()
     {
@@ -39,16 +39,20 @@ public class Bomb_omb : MonoBehaviour
     {
         //Check for sight and Attack Range
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
-
-        if (!playerInSightRange && !playerInAttackRange) Patroling();
-        if (playerInSightRange && !playerInAttackRange) ChasePlayer();
-        if (playerInSightRange && playerInAttackRange) Explode();
+        playerInAttackRange = Physics.CheckSphere(vision.position, attackRange, whatIsPlayer);
+        playerInPickUpRange = Physics.CheckSphere(pickup.position, pickUpRange, whatIsPlayer);
 
         if (isTimerOn)
             TimerIsOn();
+
+        if (!playerInSightRange && !playerInAttackRange && !playerInPickUpRange) Patroling();
+        if (playerInPickUpRange && !playerInSightRange) PickUp();
+        if (playerInSightRange && !playerInAttackRange && !playerInPickUpRange) ChasePlayer();
+        if (playerInSightRange && playerInAttackRange && !playerInPickUpRange) Explode();
+
     }
 
+    //Primary Function
     private void Patroling()
     {
         if (!walkPointSet) SearchWalkPoint();
@@ -61,17 +65,6 @@ public class Bomb_omb : MonoBehaviour
         //Walkpoint reached
         if (distanceToWalkPoint.magnitude < 1f)
             walkPointSet = false;
-    }
-    private void SearchWalkPoint()
-    {
-        //Calculate random point in range
-        float randomZ = Random.Range(-walkPointRange, walkPointRange);
-        float randomX = Random.Range(-walkPointRange, walkPointRange);
-
-        walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
-
-        if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
-            walkPointSet = true;
     }
 
     private void ChasePlayer()
@@ -97,6 +90,35 @@ public class Bomb_omb : MonoBehaviour
         {
             timeToExplode = 0;
         }
+    }
+
+    public void PickUp()
+    {
+        TimerIsOn();
+
+        if (timeToExplode < 0)
+        {
+            Damageplayer();
+            //DropCoin();
+            DestroyEnemy();
+        }
+        if (timeToExplode < -1)
+        {
+            timeToExplode = 0;
+        }
+    }
+
+    // Secondary Functions
+    private void SearchWalkPoint()
+    {
+        //Calculate random point in range
+        float randomZ = Random.Range(-walkPointRange, walkPointRange);
+        float randomX = Random.Range(-walkPointRange, walkPointRange);
+
+        walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
+
+        if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
+            walkPointSet = true;
     }
 
     private void TimerIsOn()
@@ -129,5 +151,8 @@ public class Bomb_omb : MonoBehaviour
         Gizmos.DrawWireSphere(vision.position, sightRange);
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(transform.position, walkPointRange);
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(pickup.position, pickUpRange);
+
     }
 }
