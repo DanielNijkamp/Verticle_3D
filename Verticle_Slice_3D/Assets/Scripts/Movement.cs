@@ -24,16 +24,21 @@ public class Movement : MonoBehaviour
     float turnSpeedHigh = 20;
 
     public float jumpheight;
+    public int maxjumpcount = 3;
+    public int jumpcount;
+    float inputTimer;
 
     public float grav = 10f;
     public bool grounded = false;
     public bool isjumping = false;
     private void Start()
     {
+        inputTimer = 0;
         character = GetComponent<CharacterController>();
     }
     void Update()
     {
+        inputTimer += Time.deltaTime;
         DoInput();
         CalculateCamera();
         CalculateGround();
@@ -42,6 +47,11 @@ public class Movement : MonoBehaviour
         DoJump();
 
         character.Move(velocity * Time.deltaTime);
+
+        if (inputTimer >= 2)
+        {
+            jumpcount = 0;
+        }
     }
 
     void DoInput()
@@ -112,20 +122,41 @@ public class Movement : MonoBehaviour
         {
             if (Input.GetButtonDown("Jump"))
             {
+                inputTimer = 0;
+                jumpcount++;
                 StartCoroutine(jumpCooldown());
+                Debug.Log(jumpcount);
             }
 
         }
         if (isjumping)
         {
-            velocity.y = jumpheight;
-
+            if (jumpcount == 1)
+            {
+                velocity.y = jumpheight;
+            }
+            else if (jumpcount == 2)
+            {
+                velocity.y = jumpheight + 2;
+            }
+            else if (jumpcount == maxjumpcount)
+            {
+                velocity.y = jumpheight + 5;
+                jumpcount = 0;
+            }
         }
     }
     IEnumerator jumpCooldown()
     {
         isjumping = true;
-        yield return new WaitForSecondsRealtime(0.1f);
+        if (jumpcount < maxjumpcount)
+        {
+            yield return new WaitForSecondsRealtime(0.1f);
+        }
+        else if (jumpcount == maxjumpcount)
+        {
+            yield return new WaitForSeconds(0.1f);
+        }
         isjumping = false;
     }
 }
