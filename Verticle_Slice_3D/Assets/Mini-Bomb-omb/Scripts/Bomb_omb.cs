@@ -9,7 +9,7 @@ public class Bomb_omb : MonoBehaviour
 
     public LayerMask whatIsGround, whatIsPlayer;
 
-    public GameObject coin;
+    public GameObject coin, playerObject;
     private PlayerTest PT;
 
     //Patroling
@@ -20,8 +20,7 @@ public class Bomb_omb : MonoBehaviour
     //Exploding
     public float timeToExplode = 5;
     bool isTimerOn;
-    public Transform vision, pickup;
-
+    public Transform vision, pickup, playerPickup, LookAtBomb;
 
     //States
     public float sightRange, attackRange, pickUpRange;
@@ -42,11 +41,8 @@ public class Bomb_omb : MonoBehaviour
         playerInAttackRange = Physics.CheckSphere(vision.position, attackRange, whatIsPlayer);
         playerInPickUpRange = Physics.CheckSphere(pickup.position, pickUpRange, whatIsPlayer);
 
-        if (isTimerOn)
-            TimerIsOn();
-
         if (!playerInSightRange && !playerInAttackRange && !playerInPickUpRange) Patroling();
-        if (playerInPickUpRange && !playerInSightRange) PickUp();
+        if (playerInPickUpRange && Input.GetKeyDown("e")) PickUp();
         if (playerInSightRange && !playerInAttackRange && !playerInPickUpRange) ChasePlayer();
         if (playerInSightRange && playerInAttackRange && !playerInPickUpRange) Explode();
 
@@ -55,6 +51,8 @@ public class Bomb_omb : MonoBehaviour
     //Primary Function
     private void Patroling()
     {
+        sightRange = 1;
+        timeToExplode = 10;
         if (!walkPointSet) SearchWalkPoint();
 
         if (walkPointSet)
@@ -94,7 +92,20 @@ public class Bomb_omb : MonoBehaviour
 
     public void PickUp()
     {
-        TimerIsOn();
+        this.gameObject.transform.position = playerPickup.position;
+        this.gameObject.transform.parent = playerObject.transform;
+        transform.LookAt(LookAtBomb.position);
+
+        sightRange = 0;
+        pickUpRange = 2;
+
+        if (!isTimerOn)
+        {
+            timeToExplode = 15;
+            isTimerOn = true;
+        }
+
+        timeToExplode -= Time.deltaTime;
 
         if (timeToExplode < 0)
         {
@@ -130,7 +141,7 @@ public class Bomb_omb : MonoBehaviour
 
     public void Damageplayer()
     {
-        if (playerInAttackRange && playerInSightRange)
+        if (playerInAttackRange)
             PT.playerHP -= 1f;
     }
     public void DropCoin()
