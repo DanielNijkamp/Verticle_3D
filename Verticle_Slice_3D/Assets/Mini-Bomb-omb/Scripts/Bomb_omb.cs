@@ -3,26 +3,33 @@ using UnityEngine.AI;
 
 public class Bomb_omb : MonoBehaviour
 {
+    [Header("General:")]
     public NavMeshAgent agent;
 
     public Transform player;
 
     public LayerMask whatIsGround, whatIsPlayer;
 
-    public GameObject coin;
+    public GameObject coin, playerObject;
     private PlayerTest PT;
 
+    [Header("Patrol:")]
     //Patroling
     public Vector3 walkPoint;
     bool walkPointSet;
     public float walkPointRange;
 
+    [Header("Explosion:")]
     //Exploding
     public float timeToExplode = 5;
-    bool isTimerOn;
     public Transform vision, pickup;
 
+    [Header("PickUp:")]
+    //PickUp
+    bool isPickedUp;
+    public Transform inHands;
 
+    [Header("States:")]
     //States
     public float sightRange, attackRange, pickUpRange;
     public bool playerInSightRange, playerInAttackRange, playerInPickUpRange;
@@ -42,14 +49,16 @@ public class Bomb_omb : MonoBehaviour
         playerInAttackRange = Physics.CheckSphere(vision.position, attackRange, whatIsPlayer);
         playerInPickUpRange = Physics.CheckSphere(pickup.position, pickUpRange, whatIsPlayer);
 
-        if (isTimerOn)
-            TimerIsOn();
-
-        if (!playerInSightRange && !playerInAttackRange && !playerInPickUpRange) Patroling();
+        if (!playerInSightRange && !playerInAttackRange && !isPickedUp) Patroling();
         if (playerInPickUpRange && !playerInSightRange) PickUp();
-        if (playerInSightRange && !playerInAttackRange && !playerInPickUpRange) ChasePlayer();
-        if (playerInSightRange && playerInAttackRange && !playerInPickUpRange) Explode();
+        if (playerInSightRange && !playerInAttackRange) ChasePlayer();
+        if (playerInSightRange && playerInAttackRange) Explode();
 
+        if (!playerInSightRange && !playerInAttackRange)
+        {
+            timeToExplode = 5;
+            sightRange = 1;
+        }
     }
 
     //Primary Function
@@ -83,7 +92,6 @@ public class Bomb_omb : MonoBehaviour
         if (timeToExplode < 0)
         {
             Damageplayer();
-            //DropCoin();
             DestroyEnemy();
         }
         if (timeToExplode < -1)
@@ -94,12 +102,15 @@ public class Bomb_omb : MonoBehaviour
 
     public void PickUp()
     {
+        isPickedUp = true;
+        this.gameObject.transform.parent = playerObject.transform;
+        this.gameObject.transform.position = inHands.position;
+
         TimerIsOn();
 
         if (timeToExplode < 0)
         {
             Damageplayer();
-            //DropCoin();
             DestroyEnemy();
         }
         if (timeToExplode < -1)
@@ -123,7 +134,6 @@ public class Bomb_omb : MonoBehaviour
 
     private void TimerIsOn()
     {
-        isTimerOn = true;
         sightRange = 10;
         timeToExplode -= Time.deltaTime;
     }
@@ -153,6 +163,5 @@ public class Bomb_omb : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, walkPointRange);
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(pickup.position, pickUpRange);
-
     }
 }

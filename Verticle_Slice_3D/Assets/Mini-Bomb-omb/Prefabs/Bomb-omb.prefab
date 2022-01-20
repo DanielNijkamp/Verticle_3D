@@ -104,15 +104,19 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   coin: {fileID: 0}
+  playerObject: {fileID: 0}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 6
   timeToExplode: 5
   vision: {fileID: 6374645337717797094}
   pickup: {fileID: 6998350072934059912}
+  inHands: {fileID: 0}
   sightRange: 1
   attackRange: 3
+  pickUpRange: 0.5
   playerInSightRange: 0
   playerInAttackRange: 0
+  playerInPickUpRange: 0
 --- !u!195 &6374645338337253729
 NavMeshAgent:
   m_ObjectHideFlags: 0
