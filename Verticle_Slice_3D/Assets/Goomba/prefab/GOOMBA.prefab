@@ -618,16 +618,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c7aa86b9e83e3746a2aaaca85ad8f4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  agent: {fileID: 5994108769244843149}
+  player: {fileID: 0}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 8
+  Goomba: {fileID: 5994108769244843149}
+  walkPoint: {x: 0, y: 0, z: 0}
+  walkPointRange: 5
+  isInAttackRange: 0
+  isInSightRange: 0
+  sightRange: 3
+  attackRange: 1.5
 --- !u!195 &5994108769244843149
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -638,7 +643,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 1.5
+  m_Speed: 0.5
   m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120

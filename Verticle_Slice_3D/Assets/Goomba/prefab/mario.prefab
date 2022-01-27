@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3862123247674618930}
   - component: {fileID: 3862123247674618929}
   - component: {fileID: 3862123247674618928}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 3862123248733732723}
   - component: {fileID: 3862123248733732722}
   - component: {fileID: 3862123248733732721}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 3862123248927794422}
   - component: {fileID: 3862123248927794421}
   - component: {fileID: 3862123248927794417}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mario
   m_TagString: Player
   m_Icon: {fileID: 0}
