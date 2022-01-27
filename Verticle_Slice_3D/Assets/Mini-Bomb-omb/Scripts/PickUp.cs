@@ -5,17 +5,31 @@ using UnityEngine;
 public class PickUp : MonoBehaviour
 {
     private PlayerTest PT;
-    private Rigidbody RB;
 
-    public bool life, star, coin, isGravity;
+    public bool life, star, coin;
+
+    public float rotateSpeed, despawnTime;
 
     private void Awake()
     {
-        RB = GetComponent<Rigidbody>();
         PT = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerTest>();
-        if (isGravity)
+    }
+
+    private void Update()
+    {
+        if (coin)
         {
-            RB.useGravity = true;
+            transform.Rotate(0, rotateSpeed * Time.deltaTime, 0);
+            despawnTime -= Time.deltaTime;
+
+            if (despawnTime <= 0)
+            {
+                Destroy(this.gameObject);
+            }
+            if (despawnTime <= -1)
+            {
+                despawnTime = 0;
+            }
         }
     }
 
@@ -38,5 +52,4 @@ public class PickUp : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
 }
