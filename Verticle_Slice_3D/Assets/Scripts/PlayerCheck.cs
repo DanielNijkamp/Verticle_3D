@@ -11,12 +11,10 @@ public class PlayerCheck : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            Chom.InSight = true;
             Other = other;
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        Chom.InSight = false;
     }
 }
