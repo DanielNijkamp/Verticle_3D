@@ -6,12 +6,11 @@ using UnityEngine.AI;
 public class goomba : MonoBehaviour
 {
     public NavMeshAgent agent;
- 
     public Transform player;
-
     public LayerMask whatIsGround, whatIsPlayer;
 
     private movement _player;
+    public GameObject coin;
 
     //Patrol
     public Vector3 walkPoint;
@@ -19,8 +18,9 @@ public class goomba : MonoBehaviour
     public float walkPointRange;
 
     //Goomba Stats
-    public bool isInAttackRange, isInSightRange;
-    public float sightRange, attackRange;
+    public bool isInAttackRange, isInSightRange, inChargeRange;
+    public float sightRange, attackRange, chargeRange;
+    public Transform sight;
 
     // Start is called before the first frame update
     void Awake()
@@ -34,8 +34,9 @@ public class goomba : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+        isInSightRange = Physics.CheckSphere(sight.position, sightRange, whatIsPlayer);
         isInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+        inChargeRange = Physics.CheckSphere(sight.position, chargeRange, whatIsPlayer);
 
         if (!isInAttackRange && !isInSightRange) UpdateDestination();
         if (!isInAttackRange && isInSightRange) ChasePlayer();
@@ -43,42 +44,72 @@ public class goomba : MonoBehaviour
     }
 
     //Primary Functions
-    void UpdateDestination() 
+    public void UpdateDestination() 
     {
-        if (!walkPointSet) SearchWalkPoint();
+        Debug.Log("This Works function");
+        if (agent.speed != 0.2f) agent.speed = 0.5f;
 
-        if (walkPointSet)
-            agent.SetDestination(walkPoint);
+        if (!walkPointSet) SearchWalkPoint(); Debug.Log("This Works function finding ground");
+
+        if (walkPointSet) agent.SetDestination(walkPoint); Debug.Log("This Works function setting position");
 
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
         //walkpoint reached
-        if (distanceToWalkPoint.magnitude < 1f)
-            walkPointSet = false;
+        if (distanceToWalkPoint.magnitude < 1f) walkPointSet = false; Debug.Log("This Works function walkpoint reached");
     }
 
     public void ChasePlayer()
     {
+        agent.speed = 0.2f;
         agent.SetDestination(player.position);
         transform.LookAt(player.position);
+        if (inChargeRange)
+        {
+            agent.speed = 10;
+        }
     }
 
     public void AttackPlayer()
     {
+        //speed 0 
+        //play animation and change speed to 10
 
+        StartCoroutine(Attack());
     }
 
     //Secondary Functions
     private void OnTriggerEnter(Collider collider)
     {
-        if(collider.tag == "Player")
+        if (collider.tag == "Player")
         {
-            Attack();
+            StartCoroutine(Death());
         }
     }
-    public void Attack()
+    IEnumerator Attack()
     {
-        _player.health -= 10;
+        for (int i = 0; i < 1; i++)
+        {
+            _player.health -= 10;
+            yield return new WaitForSeconds(5f);
+        }
+    }
+
+     public IEnumerator Death()
+    {
+        //GetComponent<Animator>().SetBool("Squish", true);
+        //GetComponent<Rigidbody>().isKinematic = true;
+        //GetComponent<CapsuleCollider>().enabled = false;
+        //GetComponent<BoxCollider>().enabled = false;
+        yield return new WaitForSeconds(.5f);
+        //Dropcoin();
+        Destroy(gameObject);
+    }
+
+    public void Dropcoin()
+    {
+        GameObject a = Instantiate(coin) as GameObject;
+        a.transform.position = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
     }
     void SearchWalkPoint()
     {
@@ -88,7 +119,7 @@ public class goomba : MonoBehaviour
         walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
 
         if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
-            walkPointSet = false;
+            walkPointSet = true;
     }
 
     private void OnDrawGizmosSelected()
@@ -96,7 +127,9 @@ public class goomba : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, sightRange);
+        Gizmos.DrawWireSphere(sight.position, sightRange);
+        Gizmos.color = Color.black;
+        Gizmos.DrawWireSphere(sight.position, chargeRange);
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(transform.position, walkPointRange);
     }
