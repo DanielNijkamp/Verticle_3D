@@ -154,7 +154,7 @@ public class Bomb_omb : MonoBehaviour
     public void Damageplayer()
     {
         if (playerInAttackRange)
-            PT.playerHP -= 1f;
+            FindObjectOfType<UI>().health -= 1;
     }
     public void DropCoin()
     {

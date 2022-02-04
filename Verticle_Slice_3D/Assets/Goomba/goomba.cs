@@ -74,7 +74,7 @@ public class goomba : MonoBehaviour
     {
         //speed 0 
         //play animation and change speed to 10
-
+        FindObjectOfType<UI>().health -= 1;
         StartCoroutine(Attack());
     }
 
@@ -90,7 +90,6 @@ public class goomba : MonoBehaviour
     {
         for (int i = 0; i < 1; i++)
         {
-            _player.health -= 10;
             yield return new WaitForSeconds(5f);
         }
     }
